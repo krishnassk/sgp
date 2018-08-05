@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<jnlp spec="1.0+" codebase="http://localhost/sgp/">
+  <information>
+    <title>sgp</title>
+    <vendor>sgp</vendor>
+    <description></description>
+    <description kind="short"></description>
+  </information>
+  <!--
+  unsigned
+  <security>
+  <all-permissions/>
+  </security>
+  -->
+  <resources>
+    <j2se version="1.5+"/>
+    <jar href="jvxclient-2.1.1.jar" main="true"/>
+    <jar href="sgp-client-1.0.jar"/>
+  </resources>
+  <application-desc main-class="com.sibvisions.rad.ui.swing.impl.SwingApplication">
+    <argument>&quot;sgp.MainApplication&quot;</argument>
+    <argument>&quot;Application.serverbase=http://localhost/sgp/&quot;</argument>
+    <argument>&quot;Application.connectionClass=com.sibvisions.rad.remote.http.HttpConnection&quot;</argument>
+    <argument>&quot;Application.Menu.exit.visible=true&quot;</argument>
+  </application-desc>
+</jnlp>
